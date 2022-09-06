@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { GoBell } from "react-icons/go";
 import { AiOutlineSearch } from "react-icons/ai";
 import useAuth from "../hooks/useAuth";
+import BasicMenu from "./BasicMenu";
 
 function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -34,6 +35,8 @@ function Header() {
           className='cursor-pointer object-contain'
         />
 
+        <BasicMenu/>
+
         <ul className="hidden space-x-4 md:flex">
           <li className='headerLink'>Home</li>
           <li className='headerLink'>TV Shows</li>
@@ -46,14 +49,13 @@ function Header() {
         <AiOutlineSearch className="hidden h-6 w-6 sm:inline"/>
         <p className="hidden lg:inline">Kids</p>
         <GoBell className="h-6 w-6"/>
-        {/* <Link href="/account"> */}
+        <Link href="/account">
           <img
-            onClick={logOut}
             src="https://rb.gy/g1pwyx"
             alt=""
             className="cursor-pointer rounded"
           />
-        {/* </Link> */}
+        </Link>
       </div>
     </header>
   );
