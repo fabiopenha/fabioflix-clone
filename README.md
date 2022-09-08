@@ -22,6 +22,20 @@
 **Stripe:** Api para recebimento de pagamento com recorrência.
 
 
+## Testando o site
+
+ - Para entrar no sistema você precisa inserir **Login** e **Senha** e clicar em **_Sign up now_** para criar um usuário.
+ - Com o usuário criado, você terá que escolher um plano e simular o pagamento inserindo os dados do cartão de crédito de teste abaixo:
+  
+  **Cartão de Crédito:** 4242 4242 4242 4242
+  
+  **CVC:** Quaisquer 3 dígitos (ex: 434)
+  
+  **Data de vencimento:** Qualquer data futura (ex: 05/24)
+  
+  **Endereço:** Qualquer endereço válido
+
+
 ## Rodando localmente
 
 Clone o projeto
@@ -45,7 +59,7 @@ Instale as dependências
 Inicie o servidor
 
 ```bash
-  npm run start
+  npm run dev
 ```
 
 
